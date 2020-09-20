@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="https://lezebre.lu/images/detailed/17/30011-bmw-logo.png" />
+  <title>Mój pierwszy samochód</title>
+
+  <!-- CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="css/blog-home.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Menu -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mój pierwszy samochód</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Strona Główna</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Poprzednie samochody</a>
+          </li>
+		  
+		  <li class="nav-item active">
+            <a class="nav-link" href="third.html">Kontakt</a>
+			 <span class="sr-only">(current)</span>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <h1>Kontakt</h1>
+  <h1>Kontakt</h1>
+
+  
+  <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+    <div class="form-row">
+        <label for="field-name">Name*</label>
+        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+    </div>
+    <div class="form-row">
+        <label for="field-email">Email*</label>
+        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+    </div>
+    <div class="form-row">
+        <label for="field-message">Message*</label>
+        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+    </div>
+    <div class="form-row">
+        <label class="checkbox-cnt">
+            <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+            <i class="state" aria-hidden="true"></i>
+            <span>Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie adres e-mail informacji odnośnie nowych treści na moim blogu. </span>
+        </label>
+    </div>
+    <div class="form-row">
+        <button type="submit" class="submit-btn">
+            Wyślij
+        </button>
+    </div>
+</form>
